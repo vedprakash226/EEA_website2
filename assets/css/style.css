@@ -122,12 +122,15 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 #header.header-scrolled,
-#header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.8);
+#header.header-inner-pages,
+#header.fixed-top
+{
+  background: white;
+  opacity: 1;
 }
 
 #header .logo {
@@ -149,7 +152,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  height: 45px;
 }
 
 /*--------------------------------------------------------------
@@ -206,9 +209,9 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
-  color: #fff;
+  color: black;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -224,7 +227,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffc451;
+  color: goldenrod;
 }
 
 .navbar .dropdown ul {
@@ -261,7 +264,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  background-color: #ffc451;
+  background-color: goldenrod;
 }
 
 .navbar .dropdown:hover>ul {
@@ -406,7 +409,7 @@ h6 {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/introsession.jpeg") top center;
   background-size: cover;
   position: relative;
 }
@@ -543,6 +546,29 @@ section {
   color: #151515;
 }
 
+/* explore*/
+#explore
+{
+  height: 50px;
+  width: 110px;
+  font-size: 0.5cm;
+  font-weight: 700;
+  border: 2px solid rgb(245, 249, 247);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius:5px;
+  border-top-left-radius: 5px;
+  background-color:transparent;
+  position: relative;
+  top: 20px;
+  color: white;
+}
+#explore:hover
+{
+  background-color: goldenrod;
+  color: black;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -646,17 +672,17 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Projects
 --------------------------------------------------------------*/
-.services .icon-box {
+.Projects .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: white;
 }
 
-.services .icon-box .icon {
+.Projects .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -669,34 +695,90 @@ section {
   transition: 0.3s;
 }
 
-.services .icon-box .icon i {
+.Projects .icon-box .icon i {
   color: #151515;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
 
-.services .icon-box h4 {
+.Projects .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.Projects .icon-box h4 a {
   color: #151515;
   transition: ease-in-out 0.3s;
 }
 
-.services .icon-box h4 a:hover {
+.Projects .icon-box h4 a:hover {
   color: #ffc451;
 }
 
-.services .icon-box p {
+.Projects .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.Projects .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+.Projects .icon-box1 {
+  text-align: center;
+  border: 1px solid #ebebeb;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: white;
+  position: relative;
+  left: 15vw;
+}
+
+.Projects .icon-box1 .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #ffc451;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.Projects .icon-box1 .icon i {
+  color: #151515;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.Projects .icon-box1 h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.Projects .icon-box1 h4 a {
+  color: #151515;
+  transition: ease-in-out 0.3s;
+}
+
+.Projects .icon-box1 h4 a:hover {
+  color: #ffc451;
+}
+
+.Projects .icon-box1 p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.Projects .icon-box1:hover {
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
@@ -744,9 +826,14 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+
+
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+
 
 .portfolio #portfolio-flters {
   padding: 0;
@@ -802,6 +889,7 @@ section {
 
 .portfolio .portfolio-wrap img {
   transition: all ease-in-out 0.3s;
+  size-adjust: auto;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -829,9 +917,9 @@ section {
 .portfolio .portfolio-wrap .portfolio-info p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding: 0;
-  margin: 0;
+  margin-bottom: 10px;
   font-style: italic;
 }
 
@@ -843,7 +931,7 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 5px 0 0;
-  font-size: 28px;
+  font-size: 15px;
   display: inline-block;
   transition: 0.3s;
 }
@@ -863,6 +951,7 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -927,6 +1016,21 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+
+.portfolio-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin-top: 8px;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1123,88 +1227,6 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team {
-  background: #fff;
-  padding: 60px 0;
-}
-
-.team .member {
-  margin-bottom: 20px;
-  overflow: hidden;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.team .member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  right: 0;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #151515;
-  margin: 0 3px;
-  border-radius: 4px;
-  width: 36px;
-  height: 36px;
-  background: rgba(255, 255, 255, 0.8);
-  transition: ease-in-out 0.3s;
-  color: #484848;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team .member .social a:hover {
-  color: #151515;
-  background: #ffc451;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  line-height: 0;
-}
-
-.team .member .member-info {
-  padding: 25px 15px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #151515;
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.team .member:hover .social {
-  opacity: 1;
-  bottom: 15px;
-}
 
 /*--------------------------------------------------------------
 # Contact

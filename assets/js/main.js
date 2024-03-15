@@ -291,3 +291,37 @@
   new PureCounter();
 
 })()
+/*document.getElementById('explore').addEventListener('click', function() {
+  document.getElementById('about').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+});*/
+function scrollTo(element, to, duration) {
+  const start = element.scrollTop;
+  const change = to - start;
+  const increment = 20;
+  let currentTime = 0;
+
+  const animateScroll = function() {
+    currentTime += increment;
+    const val = Math.easeInOutQuad(currentTime, start, change, duration);
+    element.scrollTop = val;
+    if (currentTime < duration) {
+      setTimeout(animateScroll, increment);
+    }
+  };
+  animateScroll();
+}
+
+// Easing function
+Math.easeInOutQuad = function (t, b, c, d) {
+  t /= d / 2;
+  if (t < 1) return c / 2 * t * t + b;
+  t--;
+  return -c / 2 * (t * (t - 2) - 1) + b;
+};
+
+document.getElementById('explore').addEventListener('click', function() {
+  const section = document.getElementById('about');
+  scrollTo(document.documentElement, section.offsetTop, 2500); // Adjust duration (1000 is 1 second)
+});
