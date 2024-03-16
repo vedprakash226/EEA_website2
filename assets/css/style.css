@@ -872,6 +872,7 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(21, 21, 21, 0.6);
+  border-radius: 10px;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -1031,6 +1032,10 @@ section {
   margin-top: 8px;
   border: 2px solid #fff;
   color: #fff;
+}
+
+.portfolio-btn:hover {
+  scale: 1.05;
 }
 
 /*--------------------------------------------------------------
