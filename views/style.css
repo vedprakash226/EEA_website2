@@ -2,7 +2,6 @@
     font-size: 1.5rem;
     margin-left: 36%;
     color: black;
-    font-weight: 600;
 }
 
 :hover.modified_link{
@@ -10,7 +9,6 @@
     transition-duration: 0.2s ;
 }
 
-.image_modification img{
-    border-radius: 10%;
-    border
+.img_modification{
+    border-radius: 7%;
 }
