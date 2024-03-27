@@ -10,5 +10,42 @@
 }
 
 .img_modification{
-    border-radius: 7%;
+    border-radius: 6%;
+    position: relative;
+    text-align: center;
+
+    /* margin-left: 20px; */
+
+}
+
+.coming{
+    position:absolute;
+    top: 45%;
+    left: 20%;
+    /* transform: translate(-50%, -50%); */
+    font-size: 1.75rem;
+    font-weight: 400;
+    /* color: white; */
+    visibility: hidden;
+}
+
+:hover.img_modification .coming{
+    visibility: visible;
+    transition: all;
+    transition-duration: 0.4s;
+    transform: translateY(-5px);
+    /* opacity: 0.9; */
+}
+
+:hover.img_modification img{
+    transition: all;
+    transition-duration: 0.4s;
+    transform: translateY(-5px);
+    opacity: 0.05;
+}
+:hover.img_modification{
+    box-shadow: 1px 1px 15px 1px rgb(194, 193, 193) !important;
+    transition: all;
+    transition-duration: 0.4s;
+    transform: translateY(-5px);
 }
