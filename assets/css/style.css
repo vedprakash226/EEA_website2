@@ -713,8 +713,9 @@ section {
 .Projects .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
-  padding: 80px 20px;
+  padding: 20px 40px;
   transition: all ease-in-out 0.3s;
+  cursor: pointer;
   background: white;
 }
 
@@ -748,11 +749,12 @@ section {
   transition: ease-in-out 0.3s;
 }
 
-.Projects .icon-box h4 a:hover {
+/* .Projects .icon-box h4 a:hover {
   color: #ffc451;
-}
+} */
 
 .Projects .icon-box p {
+  color: rgba(0, 0, 0);
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
@@ -762,14 +764,21 @@ section {
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
+  color: #ffc451;
+  opacity : 0.9;
 }
+
+/* .Projects .icon-box:hover .Projects .icon-box h4 a{
+  color: #ffc451;
+} */
 
 .Projects .icon-box1 {
   text-align: center;
   border: 1px solid #ebebeb;
-  padding: 80px 20px;
+  padding: 40px 30px;
   transition: all ease-in-out 0.3s;
   background: white;
+  cursor: pointer;
   position: relative;
   left: 15vw;
 }
@@ -786,6 +795,17 @@ section {
   margin-bottom: 20px;
   transition: 0.3s;
 }
+
+.Projects .icon-box1 img {
+  margin-bottom : 20px;
+  /* width: 200px; */
+}
+
+/* .Projects #webmail img {
+  width: 200px;
+} */
+
+
 
 .Projects .icon-box1 .icon i {
   color: #151515;
@@ -804,11 +824,12 @@ section {
   transition: ease-in-out 0.3s;
 }
 
-.Projects .icon-box1 h4 a:hover {
+/* .Projects .icon-box1 h4 a:hover {
   color: #ffc451;
-}
+} */
 
 .Projects .icon-box1 p {
+  color: rgb(0, 0, 0);
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
@@ -818,6 +839,7 @@ section {
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
+  color: #ffc451;
 }
 
 /*--------------------------------------------------------------
