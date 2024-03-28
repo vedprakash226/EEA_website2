@@ -1631,3 +1631,7 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+li{
+  scroll-behavior: smooth;
+}
