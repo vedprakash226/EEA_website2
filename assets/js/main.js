@@ -325,3 +325,9 @@ document.getElementById('explore').addEventListener('click', function() {
   const section = document.getElementById('about');
   scrollTo(document.documentElement, section.offsetTop, 2500); // Adjust duration (1000 is 1 second)
 });
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
